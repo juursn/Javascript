@@ -1,0 +1,33 @@
+#Incrementação
+
+x = x+n
+
+x+=n
+
+x++ // pós incrementação(incrementa depois)
+
+++x //pré incrementação (incrementa antes)
+
+#Relacional
+
+== // igualdade apenas no caracter (igual)
+=== // igualdade no caracter e no tipo (identico)
+
+# Lógicos
+
+@ordem de percedencia !  &&  ||
+
+! negação (ou verdadeiro ou falso) 
+// !True >> false  
+// !False >> true
+
+&& conjunção (Os dois precisam ser verdadeiros)
+
+|| diajunção (ou isso ou aquilo)
+
+#Ternário
+
+media>7?"Aprovado":"Reprovado"
+[condição]?[True]:[False] 
+// se for verdadeiro >> ?
+// se for falso >> :

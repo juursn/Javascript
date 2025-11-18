@@ -1,0 +1,14 @@
+#Strings
+
+> caio.toUpperCase(caio) //Formatar em maiusculas
+'JULIA'
+> caio.toLowerCase(caio) //Formatar em minusculas
+'julia'
+
+#Numbers
+
+> n1.toFixed(2) // Duas casas decimais fixas
+
+> n1.toFixed(2).replace('.',',') //Troca ponto por virgula 
+
+> n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) //Conversão de moeda
