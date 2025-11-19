@@ -1,0 +1,40 @@
+#DOM
+> Document
+> Object
+> Model
+
+##Árvore DOM
+
+window - Tudo no site. (A janela)
+
+    location - Url que está localizado.
+
+    document - O documento atual.
+        html- 
+            head - 
+                meta - 
+                title -
+            body -
+                h1, p, p, div...
+                p - 
+                    strong -
+
+    history - Tudo que acontecu e pra onde foi. 
+
+#Acessos
+
+## Marca
+    *getElementsByTagName()*
+     - Para selecionar um especifico -- getElementsByTagName()[Qual você precisa]
+
+## ID
+    getElementById()
+
+## Nome
+    getElementsByName()
+
+## Classe
+    getElementsByClassName()
+
+## Seletor
+    querySelector()
