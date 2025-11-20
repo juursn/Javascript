@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="Pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #area {
+            font: bold 20pt Arial;
+            background-color: rgb(45, 139, 255);
+            background-color: rgb(0, 5, 100);
+            color: white;
+            width: 200px;
+            height: 200px;
+            margin: auto;
+            margin: top 100%;
+            ;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        Interaja...
+    </div>
+    <script>
+        var area = document.querySelector('div#area')
+        function clicar() {
+            area.innerText = 'Clicou!!'
+            area.style.background = 'rgb(0, 5, 100)'
+        }
+        function entrar() {
+            area.style.background = 'rgb(0, 60, 100)'
+        }
+        function sair() {
+            area.innerText = 'Tirou o mouse ):'
+            area.style.background = 'rgb(45, 139, 255)'
+        }
+    </script>
+</body>
+
+</html>

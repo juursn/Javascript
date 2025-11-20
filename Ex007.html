@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="Pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando</title>
+    <style>
+        body {
+            font: 18pt Arial;
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input {
+            font: normal 15pt Arial;
+            width: 100px;
+            height: 30px;
+            margin: 0px 10px;
+            border: solid 2px;
+            border-radius: 5px;
+        }
+
+        #bnt {
+            height: 40px;
+            margin: 20px auto;
+            color: green;
+            font: bold Arial
+        }
+
+        #resu {
+            width: 300px;
+            margin: 25px auto;
+            padding: 20px;
+            border: solid rgb(0, 58, 102) 2px;
+            border-radius: 5px;
+
+        }
+
+        #soma {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            padding: 15px;
+            border: solid rgb(0, 101, 183) 3px;
+            border-radius: 13px;
+            min-width: 55%;
+            height: 400px;
+        }
+
+        #input {
+            max-height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="soma">
+        <h1>Somando Valores</h1>
+        <div id="input">
+            <input type="number" name="txtn1" id="txtn1"> +
+            <input type="number" name="txtn2" id="txtn2">
+            <input type="button" value="somar" onclick="somar()" id="bnt">
+        </div>
+        <div id="resu">Resultado</div>
+    </div>
+    <script>
+        function somar() {
+            var txtn1 = document.getElementById('txtn1')
+            var txtn2 = document.getElementById('txtn2')
+
+            var n1 = Number(txtn1.value)
+            var n2 = Number(txtn2.value)
+            var s = n1 + n2
+            resu.innerHTML = `A soma dos valores ${n1} e ${n2} deu <strong>${s}</strong>`
+        }
+
+    </script>
+</body>
+
+</html>
