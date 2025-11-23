@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body {
+            display: flex;
+            min-height: 100vh;
+            place-content: center;
+            align-items: center;
+        }
+
+        #all {
+            font: normal 18pt Arial;
+            min-width: 50%;
+            height: 40%;
+            text-align: center;
+            padding: 30px;
+            border: outset grey 3px;
+            border-radius: 20px;
+
+        }
+
+        #nac {
+            border-style: ridge;
+            border-radius: 10px;
+            height: 25px;
+
+        }
+
+        h1:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="all">
+        <h1>Você é estrangeiro?</h1>
+        <p>Descubra agora!</p>
+        <input type="text" id="nac" placeholder="Digite seu país">
+        <input type="button" value="Desvendar" onclick="desvendar()">
+        <div id="resu"></div>
+    </div>
+    <script>
+        var na = document.querySelector('input#nac')
+        var resu = document.querySelector('div#resu')
+        resu.innerHTML = '<p>De acordo com meu conhecimento você é:<p> '
+        function desvendar() {
+            var naci = na.value
+            if (naci == 'Brasil' || naci == 'brasil') {
+                resu.innerHTML = '<p>Você é <strong>brasileiro!!</strong><p>'
+                resu.style.color = 'green'
+            } else {
+                resu.innerHTML = '<p>Você é <strong>estrangeiro!!</strong><p>'
+                resu.style.color = 'blue'
+            }
+        }
+    </script>
+</body>
+
+</html>
