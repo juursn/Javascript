@@ -1,0 +1,5 @@
+num.length visualizar a quantidade de elementos do vetor
+
+num[3] = 6 adiciona em um indice específico.
+
+num.indexOf(7) verifica se tem um valor retorna o indice. Caso não tenha retorna -1

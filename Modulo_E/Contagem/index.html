@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="Pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Contador</title>
+	</head>
+	<body>
+		<header><h1>Contador de números</h1></header>
+		<section class="all">
+			<div class="input">
+				<p>
+					<label for="ini">Inicio: </label>
+					<input type="number" name="txtinic" id="txtini" />
+				</p>
+				<p>
+					<label for="txtend">Fim: </label>
+					<input type="number" name="txtfim" id="txtfim" />
+				</p>
+				<p>
+					<label for="txtqut">Passo: </label>
+					<input type="number" name="txtqt" id="txtqut" />
+				</p>
+				<input type="button" value="Iniciar" onclick="contagem()" />
+			</div>
+
+			<div id="resu">Preparando a contagem...</div>
+		</section>
+		<script src="script.js"></script>
+	</body>
+</html>
